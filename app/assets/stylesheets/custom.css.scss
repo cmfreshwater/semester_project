@@ -1,2 +1,20 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body {
+  padding-top: 101px;
+}
+
+.main_header{
+  color: white;
+  line-height: 55px;
+}
+
+td{
+  padding:5px;
+}
+
+.col-lg-6 {
+  text-align:center;
+}
+  
