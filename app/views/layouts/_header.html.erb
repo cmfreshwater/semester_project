@@ -1,14 +1,15 @@
 <link rel="stylesheet.css" type="text/css" charset="utf-8" />
 <header class="navbar navbar-fixed-top navbar-inverse">
-                <div class="container">
+                <div>
                     <nav>
                         <ul class="nav navbar-nav pull-left">
                             <li><%= link_to image_tag("TFF4.png", alt:"logo"), root_path %></li>
                             <li><h1 class="main_header">The Firekeeper Foundation</h1></li>
                         </ul>
                         <ul class="nav navbar-nav pull-right">
-                            <li><%= link_to "Info", info_path %></li>
-                            <li><%= link_to "Users", 'new' %></li>
+                            <li><%= link_to "Home", root_path, {:style=>'color:#FFFFFF;', :class => "secondary_header"} %></li>
+                            <li><%= link_to "Info", info_path, {:style=>'color:#FFFFFF;', :class => "secondary_header"} %></li>
+                            <li><%= link_to "Users", 'new', {:style=>'color:#FFFFFF;', :class => "secondary_header"} %></li>
                         </ul>
                     </nav>
                 </div>

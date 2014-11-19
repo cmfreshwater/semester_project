@@ -13,14 +13,40 @@
     font-style: normal;
 }
 
+html, body{
+  height: 100%;
+}
+
+
 body {
   padding-top: 101px;
 }
 
 .main_header{
   font-family: "DarkSouls";
-  color:white;
-  line-height: 55px;
+  color: white;
+  line-height: 40pt;
+}
+
+.secondary_header{
+  font-family: "DarkSouls";
+  font-size: 16pt;
+}
+
+a:hover{
+  color: blue;
+}
+
+.info_header{
+ font-family: "DarkSouls";
+ color: black;
+ font-size: 50pt;
+}
+
+.info_body{
+  font-family: "Times New Roman";
+  color: black;
+  font-size: 16pt;
 }
 
 td{
@@ -30,4 +56,68 @@ td{
 .col-lg-6 {
   text-align:center;
 }
-  
+
+.map{
+    max-width: 100%;
+}
+
+/* footer */  
+footer{
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 2px solid #bbbbbb;
+  color: #777;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-family: "Times New Roman";
+  font-size: 12pt;
+}
+
+.site-footer, .page-wrap:after {
+  height: 60px; 
+}
+/* */
+
+/* page wrap */
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -100px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+/* */
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+
+.gravatar_edit {
+  margin-top: 15px;
+}
+
