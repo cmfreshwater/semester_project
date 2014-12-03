@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get 'new' => 'users#new'
   get 'references' => 'static_pages#references'
   get 'map' => 'static_pages#map'
+  get 'contacts' => 'static_pages#contacts'
+ # get 'signup' => 'users#signup_path' 
   resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -2,42 +2,52 @@
     <div class="row marking">
         <div class="col-lg-6">
             <h2>Returning Users</h2>
-            <table align="center">
-                <tr>
-                    <td>Email: &nbsp</td>
-                    <td><input type="text" name="email" value=""></td>
-                </tr>
-                <tr>
-                    <td>Password: &nbsp</td>
-                    <td><input type="text" name="password" value=""></td>
-                </tr>
-            </table>
+                <div class="row">
+                  <div class="col-md-6 col-md-offset-3">
+                    <%= form_for(@user) do |f| %>
+                     <%= render 'shared/error_messages' %>
+                     
+                      <%= f.label :email %>
+                      <%= f.text_field :email, class: 'form-control' %>
+                
+                      <%= f.label :password %>
+                      <%= f.password_field :password, class: 'form-control' %>
+
+
+                      <%= f.submit "Login", class: "btn btn-primary" %>
+                    <% end %>
+                  </div>
+                </div>
             <br/>
             <form action='map'>
-            <p><input type="submit" name="Sign up" value="Log In"></p>
             </form>
         </div>
         <div class="col-lg-6">
             <h2>New Users</h2>
-            <table align="center">
-                <tr>
-                    <td>Name: &nbsp</td>
-                    <td><input type="text" name="name" value=""></td>
-                </tr>
-                <tr>
-                    <td>Email: &nbsp</td>
-                    <td><input type="text" name="email" value=""></td>
-                </tr>
-                <tr>
-                    <td>Password: &nbsp</td>
-                    <td><input type="text" name="password" value=""></td>
-                </tr>
-            </table>  
-            <input type="checkbox" name="email-reminder"><body>&nbsp Want email reminders?</body>
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3">
+                <%= form_for(@user) do |f| %>
+                 <%= render 'shared/error_messages' %>
+                 
+                  <%= f.label :name %>
+                  <%= f.text_field :name, class: 'form-control' %>    
+                  
+                  <%= f.label :email %>
+                  <%= f.text_field :email, class: 'form-control' %>
+         
+                  <%= f.label :password %>
+                  <%= f.password_field :password, class: 'form-control' %>
+            
+                  <%= f.label :password_confirmation, "Confirmation" %>
+                  <%= f.password_field :password_confirmation, class: 'form-control' %>
+            
+                  <%= f.submit "Create my account", class: "btn btn-primary" %>
+                <% end %>
+              </div>
+            </div>  
             <br/>
             <br/>
             <form action='map'>
-            <p><input type="submit" name="Sign up" value="Sign up!"></p>
             </form>
         </div>
     </div>
