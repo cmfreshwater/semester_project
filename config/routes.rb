@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   root 'static_pages#home'
   get 'info' => 'static_pages#info'
-  get 'new' => 'users#new'
+  get 'signup' => 'users#new'
   get 'references' => 'static_pages#references'
   get 'map' => 'static_pages#map'
   get 'contacts' => 'static_pages#contacts'
