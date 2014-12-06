@@ -9,7 +9,7 @@
       </h1>
       <p><%= link_to "Log out", logout_path, method: "delete" %></p>
       <p>This is Where We Will Run</p>
-      <center><%= image_tag("RunMap05.png", alt:"Map of the Run", :class => "map") %></center>
+      <center><%= link_to image_tag("RunMap05.png", alt:"Map of the Run", :class => "map"), map_path %></center>
     </section>
   </aside>
 </div>
